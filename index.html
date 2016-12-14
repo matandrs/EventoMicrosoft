@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="img/ico/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/ico/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="img/ico/manifest.json">
+  <link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <title>La Educación del Siglo XXI en Boadilla</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/validator.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+    $(".contenidoeventos").load("calendario.html");
+
+    $(".boton").click(function() {
+      $(".contenidoeventos div").addClass("hidden");
+      var numero = $(this).attr("id");
+      $(".contenidoeventos div[id=" + numero + "]").removeClass("hidden");
+    });
+
+    $(".menu_item").click(function() {
+      $("div[class^='content']").addClass("hidden");
+      $(".menu_item").removeClass("active");
+      $(this).addClass("active");
+      var texto = $(this).text();
+      $("#" + texto.toLowerCase().replace(/\s+/g, '')).removeClass("hidden");
+    });
+  });
+
+  </script>
+  <div class="container" style="max-width: none !important; width: 970px">
+    <div class="row">
+      <div class="col-xs-12 nopadding">
+        <div class="purple topbar">
+          <img src="img/mslogohorizontal.png">
+        </div>
+      </div>
+    </div>
+    <!-- Fila del primer bloque -->
+    <div class="row">
+      <div id="first" class="col-xs-12 nopadding">
+        <h1 class="center_bottom" style="color:white;">La educación del Siglo XXI llega a Leganés</h1>
+      </div>
+    </div>
+    <!-- Fin del primer bloque -->
+    <!-- Fila del segundo bloque -->
+    <div class="row">
+      <div class="col-xs-12 nopadding">
+        <div class="menu_container">
+          <div class="menu_item active">Alumnos</div>
+          <div class="menu_item">Profesores</div>
+          <div class="menu_item">Padres</div>
+          <div class="menu_item">Personal TIC</div>
+          <br class="clear"></br>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="alumnos" class="content">
+          <p class="float">alumnosInteger rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+          <img width="175" height="175"/>
+          <img class="float" width="175" height="175"/>
+          <p class="float">Integer rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+        </div>
+        <div id="profesores" class="content hidden">
+          <p class="float">profesoresInteger rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+          <img width="175" height="175"/>
+          <img class="float" width="175" height="175"/>
+          <p class="float">Integer rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+        </div>
+        <div id="padres" class="content hidden">
+          <p class="float">padresInteger rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+          <img width="175" height="175"/>
+          <img class="float" width="175" height="175"/>
+          <p class="float">Integer rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+        </div>
+        <div id="personaltic" class="content hidden">
+          <p class="float">personalticInteger rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+          <img width="175" height="175"/>
+          <img class="float" width="175" height="175"/>
+          <p class="float">Integer rhoncus non libero ac vehicula. Maecenas tempor imperdiet neque, eu egestas urna rhoncus sed. Etiam scelerisque consectetur neque. Ut aliquet eros nulla, vel semper tellus convallis id. Pellentesque nisi felis, commodo id rutrum vel, luctus vitae urna. Quisque vulputate, turpis eget mollis ornare, arcu tortor ullamcorper orci, ut viverra ante magna et dolor.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Fin del segundo bloque -->
+    <!-- Fila del tercer bloque -->
+    <div class="row">
+      <div class="col-xs-12">
+        <hr>
+        <h2 class="center title">Horarios y eventos</h2>
+        <div class="tablahorarios">
+          <table border="0">
+            <tr>
+              <td class="itemtitle"><div><h3>Sábado</h3><h4>17/12</h4></div></td>
+              <td class="itemtitle"><div><h3>Domingo</h3><h4>18/12</h4></div></td>
+              <td rowspan="7">
+                <div class="contenidoeventos">
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td id="1" class="boton alumnos"><div class="item"><h4>Office 365</h4><p>10:00 - 10:30</div></td>
+                <td id="2" class="boton padres"><div class="item"><h4>Dreamspark</h4><p>10:30 - 11:00</div></td>
+                </tr>
+                <tr>
+                  <td id="3" class="boton alumnos"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                    <td id="4" class="boton padres"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                    </tr>
+                    <tr>
+                      <td id="5" class="boton personaltic"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                        <td id="6" class="boton personaltic"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                        </tr>
+                        <tr>
+                          <td id="7" class="boton profesores"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                            <td id="8" class="boton personaltic"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                            </tr>
+                            <tr>
+                              <td id="9" class="boton personaltic"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                                <td id="10" class="boton alumnos"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                                </tr>
+                                <tr>
+                                  <td id="11" class="boton alumnos"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                                    <td id="12" class="boton profesores"><div class="item"><h4>Office 365</h4><p>10:00 - 11:00</div></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <br>
+                                <div class="muestrascontainer center" style="width: 600px; background-color:red">
+                                  <div class="muestra" style="background-color:rgba(0,171,236,0.6);">&nbsp;</div>
+                                  <span>Alumnos</span>
+                                  <div class="muestra" style="background-color:rgba(186,216,10,0.6);">&nbsp;</div>
+                                  <span>Padres</span>
+                                  <div class="muestra" style="background-color:rgba(235,61,1,0.6);">&nbsp;</div>
+                                  <span>Profesores</span>
+                                  <div class="muestra" style="background-color:rgba(92,45,145,0.6);">&nbsp;</div>
+                                  <span>Personal TIC</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Fin del tercer bloque -->
+                            <!-- Fila del cuarto bloque -->
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <hr>
+                                <div class="divTable">
+                                  <div class="divTableBody">
+                                    <div class="divTableRow">
+                                      <div class="divTableCell" style="width:35%;">
+                                        <h3 class="center subtitle">Inscríbete</h3>
+                                        <div id="login-form">
+                                          <form class="form-horizontal" data-toggle="validator" role="form">
+                                            <fieldset>
+                                              <!-- Text input-->
+                                              <div class="form-group">
+                                                <label class="col-md-4 control-label" for="textinput">Nombre:</label>
+                                                <div class="col-md-6">
+                                                  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                              </div>
+                                              <!-- Text input-->
+                                              <div class="form-group">
+                                                <label class="col-md-4 control-label" for="textinput">Apellidos:</label>
+                                                <div class="col-md-6">
+                                                  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+
+                                                </div>
+                                              </div>
+                                              <!-- Multiple Radios -->
+                                              <div class="form-group">
+                                                <label class="col-md-4 control-label" for="radios">Sexo</label>
+                                                <div class="col-md-4">
+                                                  <div class="radio">
+                                                    <label for="radios-0">
+                                                      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                                                      Hombre
+                                                    </label>
+                                                  </div>
+                                                  <div class="radio">
+                                                    <label for="radios-1">
+                                                      <input type="radio" name="radios" id="radios-1" value="2">
+                                                      Mujer
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!-- Text input-->
+                                              <div class="form-group">
+                                                <label class="col-md-4 control-label" for="email">Email:</label>
+                                                <div class="col-md-6">
+                                                  <input type="email" class="form-control" id="inputEmail" data-error="Email incorrecto" required>
+                                                  <div class="help-block with-errors"></div>
+                                                </div>
+                                              </div>
+                                              <!-- Select Basic -->
+                                              <div class="form-group">
+                                                <label class="col-md-4 control-label" for="ocupacion">Ocupación</label>
+                                                <div class="col-md-6">
+                                                  <select id="ocupacion" name="ocupacion" class="form-control">
+                                                    <option value="1">-Selecciona-</option>
+                                                    <option value="2">Alumno</option>
+                                                    <option value="3">Profesor</option>
+                                                    <option value="4">Padre</option>
+                                                    <option value="5">Personal TIC</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+
+                                              <!-- Button -->
+                                              <div class="form-group">
+                                                <label class="col-md-4 control-label" for="enviar"></label>
+                                                <div class="col-md-4">
+                                                  <button id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
+                                                </div>
+                                              </div>
+                                            </fieldset>
+                                          </form>
+                                        </div>
+                                      </div>
+                                      <div class="divTableCell borderline">
+                                        <h3 class="center subtitle">Cómo llegar</h3>
+                                        <div class="mapa">
+                                          <iframe class="center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48594.72593365797!2d-3.926827294564378!3d40.427226217011416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418f88453f469b%3A0x91112c817b3e0226!2sBoadilla+del+Monte%2C+Madrid!5e0!3m2!1ses!2ses!4v1479106286485" width="90%" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                          <div class="center"><h5 style="font-weight:bold">Dirección:</h5>
+                                            <p> Calle Islas Canarias, 8 28669, Boadilla del Monte, Madrid </p></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Fin del cuarto bloque -->
+                              <!-- Fila del footer -->
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <hr>
+                                  <div class="center footer nopadding">
+                                    <a href="http://www.aebia.com/"><img class="imgfooter" src="img/logoaebia.png"></a>
+                                    <a href="http://ayuntamientoboadilladelmonte.org/"><img class="imgfooter" src="img/logoayto.png"></a>
+                                    <a href="http://www.etciberica.com/"><img class="imgfooter" src="img/logoetc.png"></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Fin del footer -->
+                            </div>
+
+                          </body>
+                          </html>

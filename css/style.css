@@ -1,0 +1,294 @@
+body { background-image: url("../img/escheresque_ste.png"); }
+
+@font-face {
+  font-family: 'Segoe UI'; /*a name to be used later*/
+  src: url('../fonts/font.ttf'); /*URL to font*/
+}
+
+.row { background-color: lightgray; }
+.alumnos { background-color:rgba(0,171,236,0.6); }
+.padres { background-color:rgba(186,216,10,0.6); }
+.profesores { background-color:rgba(235,61,1,0.6); }
+.personaltic { background-color:rgba(92,45,145,0.6); }
+.alumnos:hover { background-color:rgba(0,171,236,1); font-weight: bolder;}
+.padres:hover { background-color:rgba(186,216,10,1); font-weight: bolder;}
+.profesores:hover { background-color:rgba(235,61,1,1); color:white; font-weight: bolder;}
+.personaltic:hover { background-color:rgba(92,45,145,1); color:white; font-weight: bolder;}
+
+.tablahorarios {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.tablahorarios table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: auto;
+}
+
+.tablahorarios table tr td {
+  padding: 0px 5px 0px 5px;
+  border-radius: 3px;
+}
+
+.muestra {
+  float: left;
+  width: auto;
+  padding-left:30px;
+  border-radius: 5px;
+  margin: 0px 20px 0px 20px;
+}
+
+.muestrascontainer span {
+  float: left;
+}
+
+.item {
+  width: 175px;
+  padding: 0px 40px 0px 40px;
+  cursor:pointer;
+}
+
+.item h4 {
+  margin-bottom: 0;
+}
+
+.itemtitle {
+  background-color: gray;
+  color: white;
+}
+
+.itemtitle h3 {
+  margin-top: 10px;
+}
+
+.contenidoeventos {
+  background-color: gray;
+  opacity: 50%;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  width: 300px;
+  height: 460px;
+}
+
+.contenidoeventos h3 { padding: 10px; }
+
+
+.contenidoeventos p {
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+h1 {
+  padding-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: 0;
+}
+
+hr {
+  width: 90%;
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+}
+
+td {
+  vertical-align: top;
+}
+
+div[class^='col-xs']{
+padding: 10px 25px 10px 25px;
+}
+
+
+
+div.pizarra ul {
+  list-style:outside;
+  padding-left: 25px;
+  font-size: 22px;
+}
+
+#first {
+  background-image: url("../img/SCHOOL-CLASS.jpg");
+  height: 450px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center top;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.center_bottom {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+}
+
+
+.red {
+  background: red;
+}
+.blue {
+  background: cyan;
+}
+.green {
+  background: green;
+}
+.purple {
+  background-color: #5c2d91;
+}
+.gray {
+  background: #4f4f4f;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style:none;
+  padding: 0;
+}
+
+.formulario {
+  margin-top: 10px;
+}
+
+.mapa {
+  padding:10px;
+}
+
+.mapa iframe {
+  padding-bottom: 10px;
+}
+
+.formulario td {
+  padding: 10px;
+}
+
+.menu_container {
+  width: 100%;
+}
+
+.menu_item {
+  padding: 15px 20px 15px 20px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  width: 25%;
+  background-color: #4f4f4f;
+  font-size: 18px;
+  color: white;
+}
+
+.menu_item:hover {
+  background-color:rgba(186,216,10,1);
+  color: black;
+}
+
+.active {
+  background-color:rgba(186,216,10,1);
+  color: black;
+}
+
+.clear {
+  overflow: auto;
+}
+
+.float {
+  float: left;
+}
+
+.content p {
+  padding: 10px;
+  width: 70%;
+}
+
+.content img {
+  margin: 0px 10px 0px 10px;
+}
+
+.content {
+  width: 100%;
+  margin: 10px;
+}
+
+.content p {
+  padding-top: 20px;
+}
+
+.topbar{
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.first {border: 0;}
+
+.imgfooter {
+  padding: 0px 15px 0px 15px;
+}
+
+.content {
+  font-size: 16px;
+  text-align: justify;
+  float: left;
+  padding: 0px 30px 0px 30px;
+}
+
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	display: table-cell;
+  width: 50%;
+	padding: 0px 20px 0px 20px;
+}
+.divTableHeading {
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.borderline {
+  border-left:1px solid gray;
+}
